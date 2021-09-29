@@ -1,0 +1,66 @@
+
+body{
+    background-image: linear-gradient(to right, rgb(0, 174, 255) , rgb(247, 0, 255));
+}
+
+#menu{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#menu:hover{
+    background-color:  #00ff91;
+    border-radius: 10px;
+    border: none;
+
+}
+
+#form{
+   background-color: white;
+   max-width: 50vh;
+   min-height: 55vh;
+   border-radius: 10px;
+   padding: 15px 15px 15px 15px;
+   -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+		-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+		box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+#input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #a200ff;
+    padding: 3px 45px;
+    outline: none;
+    background: url(img/profile.png) no-repeat;
+}
+
+#input:hover{
+    border-bottom: 1px solid #00ff91;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+    opacity: 1;
+ }
+
+.btn{
+    width: 100%; 
+    text-align: center;
+     background-color: #a200ff; 
+     color: white;
+}
+.btn:hover{
+    background-color: #00ff91;
+}
+
+.senha{
+    background: none;
+    border: none;
+}
+.senha:hover{
+    color: rgb(0, 51, 255);
+}
+

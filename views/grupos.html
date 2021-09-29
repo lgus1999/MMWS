@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Responsáveis</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src='main.js'></script> 
+</head>
+
+<body style="font-family: 'Product Sans';
+src: url('fontes/PRODUCT SANS'); background-color: rgb(255, 186, 193) ;">
+<style>
+    #nome-input { text-transform: uppercase; }
+    #apelido-input { text-transform: uppercase; }
+
+    .col{
+        padding-top: 20px;
+    }
+
+    .form-lateral{
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid rgb(255, 0, 25) ;
+      outline: none;
+      width: 100%;
+    }
+    .form-lateral:hover{
+      border-bottom: 1px solid rgb(0, 110, 255);
+    }
+
+    .form-lateral::-webkit-input-placeholder{
+      text-transform:initial;
+      font-size: 0.8rem;
+    }
+    .form-select{
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid rgb(255, 0, 25) ;
+      outline: none;
+      width: 100%;
+      border-radius: 0px;
+      font-size: 0.8rem;
+    }
+    .form-select:hover{
+      border-bottom: 1px solid rgb(0, 110, 255);
+    }
+    
+</style>
+
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgb(255, 0, 25);">
+    <div class="container">
+      <a class="navbar-brand" href="adm.html"><img src="..\img\logo 2.png" alt="" width="180px" height="90px"></a>
+
+
+
+      <li class="nav-item d-flex ">
+        <a class="nav-link active" aria-current="page" href="adm.html" id="menu" style="color: white;">
+            <i class="bi bi-arrow-left-circle"></i>
+
+          <b>Voltar</b></a>
+      </li>
+  </nav>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col col-md-3" style="background-color: white; padding-right: 20px;">
+        <form>
+            <div class="col-sm-12">
+                <h2 style="text-align: center;"><b>Cadastrar grupo de produção</b></h2>
+              </div>
+
+              <div class="col-sm">
+                <label for=""  class="col-sm-12 col-form-label" >Nome do grupo</label>
+                <input type="text" id="nomeGrupo-input" placeholder="Ex.: Modelador..."  class="form-lateral"  onkeyup="this.value = this.value.toUpperCase()">
+              </div>
+        
+
+                <div class="col-sm">
+                    <label for="" class="col-sm-12 col-form-label">Código do grupo</label>
+                  <input type="number" class="form-lateral" placeholder="Ex.: 3306" id="numGrupo">
+                </div>
+      
+
+                <div class="col-sm">
+                    <label for="" class="col-sm-12 col-form-label">Supervisor</label>
+                  <input type="text"  id="supervisor-input" class="form-lateral" placeholder="Digite o nome do supervisor do grupo"  onkeyup="this.value = this.value.toUpperCase()">
+                </div>
+ 
+
+                <div class="col-sm">
+                    <label for="" class="col-sm-12 col-form-label">Unidade</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected >Selecione a unidade a qual o grupo pertence</option>
+                        
+                      </select>
+                </div>
+       
+             <br>
+           
+           
+           
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Cadastrar</button>
+              </div><br>
+          </form>
+    </div>
+
+    <div class="col col-md-9">
+        <h2><b>Lista de grupos</b></h2>
+        <table class="table table-hover" style="background-color: white;">
+            <thead>
+              <tr>
+                <th scope="col">Nº do grupo</th>
+                <th scope="col">Nome do grupo</th>
+                <th scope="col">Unidade</th>
+                <th scope="col">Supervisor</th>
+                <th scope="col">Excluir</th>
+                <th scope="col">Editar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+  
+              </tr>
+  
+            </tbody>
+          </table>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+
+</html>
